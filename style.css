@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body, h1, p, ul, li{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #36393f;
+}
+
+main{
+    padding: 0 10vw 0 10vw;
+}
+
+footer nav ul li a{
+    text-decoration: none;
+}
+
+footer nav ul li a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+    color: white;
+}
+
+footer nav ul li a:link, a:visited {
+    color: white;
+}
+
+footer nav ul li a:link:active, a:visited:active {
+    color: white;
+}
+
+.discord-message{
+    display: flex;
+    font-family: "whitneybook";
+    color: #dcddde;
+    padding: 2vmin;
+}
+
+.discord-message:hover{
+    background-color: #32353b;
+}
+
+.discord-message .text-content .title{
+    padding: 0 0 .5vmin 2vmin;
+    font-size: 2.5vmin;
+    font-weight: bolder;
+}
+
+.discord-message .text-content .text{
+    width: 50vw;
+    padding: 0 0 0 2vmin;
+    font-size: 2.5vmin;
+}
+
+.discord-message .text-content b{
+    font-size: 3vmin;
+}
+
+.discord-message .text-content h1{
+    font-size: 3vmin;
+}
+
+.discord-message .avatar{
+    width: 8vmin;
+    height: 8vmin;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+}
+
+.discord-message .avatar:hover{
+    box-shadow: 0 0 1vmin .1vmin black;
+    cursor: pointer;
+}
+
+.ben-avatar{
+    background-image: url("images/ben.png");
+}
+
+.ardub-avatar{
+    background-image: url("images/ardub.png");
+}
+
+.user-avatar{
+    background-image: url("images/user.png");
+}
+
+footer{
+    margin-top: auto;
+    font-size: 2.5vmin;
+    font-family: "whitneybook";
+    color: #dcddde;
+    background-color: #23272a;
+}
+
+footer nav{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer nav ul li{
+    list-style: none;
+    padding-top: .5vmin;
+}
+
+footer nav ul{
+    padding: 1vmin;
+    display: flex;
+    flex-direction: column;
+}
+
+.list {
+    font-size: 2vmin;
+}
+
+@font-face {
+    font-family: "whitneybook";
+    src: url("fonts/whitneybook.otf");
+}
+
+@media (max-width: 900px) {
+    main { padding: 0 };
+}
