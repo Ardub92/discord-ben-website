@@ -67,6 +67,9 @@ a:visited:active {
   background-position: center;
   background-size: cover;
 }
+.round {
+  border-radius: 2vmin;
+}
 .discord-message .avatar:hover {
   box-shadow: 0 0 1vmin 0.1vmin black;
   cursor: pointer;
@@ -129,11 +132,17 @@ img {
   display: flex;
   flex-direction: row;
 }
+.column {
+  flex-direction: column;
+}
 .font-size-title {
   font-size: 4vmin;
 }
 .font-size-button {
   font-size: 2.5vmin;
+}
+.font-size-avgnormal {
+  font-size: 3vmin;
 }
 .font-size-normal {
   font-size: 2vmin;
@@ -141,11 +150,27 @@ img {
 .w-40 {
   width: 40vw;
 }
-.mediumtop {
+.flex {
+  display: flex;
+  align-items: center;
+}
+.medium-top {
   margin-top: 4vmax !important;
 }
+.small-top {
+  margin-top: 2vmin !important;
+}
 .medium-padding {
-  padding: 2vmax !important;
+  padding: 2vmax 2vmax 0 2vmax !important;
+}
+.small-margin {
+  margin: 1vmax !important;
+}
+.gray-bg {
+  background-color: #2f3136;
+}
+.medium-box-padding {
+  padding: calc(2vmax - 2vmin);
 }
 .button {
   padding: 2.5vmin;
@@ -164,6 +189,9 @@ img {
 }
 .small-image {
   width: 5vmax;
+}
+.command img {
+  width: 30%;
 }
 .hello {
   background-image: url(images/banner.png);
